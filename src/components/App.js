@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div id="main">
         <button id="click" onClick={this.handlClick}></button>
-        {this.state.display ? <p id="para">{this.state.info}</p> : null}
+        {this.state.display && <p id="para">{this.state.info}</p>}
       </div>
     );
   }
