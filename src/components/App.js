@@ -16,10 +16,10 @@ class App extends Component {
   };
   render() {
     return (
-      <>
+      <div id="main">
         <button id="click" onClick={this.handlClick}></button>
         <p id="para">{this.state.info}</p>
-      </>
+      </div>
     );
   }
 }
