@@ -5,11 +5,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      display: false,
       info: ""
     };
   }
   handlClick = () => {
     this.setState({
+      display: true,
       info:
         "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
     });
@@ -18,7 +20,7 @@ class App extends Component {
     return (
       <div id="main">
         <button id="click" onClick={this.handlClick}></button>
-        <p id="para">{this.state.info}</p>
+        {this.state.display ? <p id="para">{this.state.info}</p> : null}
       </div>
     );
   }
