@@ -5,13 +5,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: false
+      isDisplay: false
     };
-    this.handleClick = this.handleClick.bind(this);
   }
   handlClick() {
     this.setState({
-      display: true
+      isDisplay: true
     });
   }
   render() {
