@@ -8,14 +8,15 @@ class App extends Component {
       display: false,
       info: ""
     };
+    this.handleClick = this.handleClick.bind(this);
   }
-  handlClick = () => {
+  handlClick() {
     this.setState({
       display: true,
       info:
         "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
     });
-  };
+  }
   render() {
     return (
       <div id="main">
