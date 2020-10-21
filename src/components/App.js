@@ -17,12 +17,12 @@ class App extends Component {
     return (
       <div id="main">
         <button id="click" onClick={this.handlClick}></button>
-        {this.state.display && (
+        {this.state.display ? (
           <p id="para">
             Hello, I've learnt to use the full-stack evaluation tool. This makes
             me so happy
           </p>
-        )}
+        ) : null}
       </div>
     );
   }
